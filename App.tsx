@@ -6,22 +6,9 @@
  */
 import React from 'react'
 import type { PropsWithChildren } from 'react'
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native'
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen'
+import { StyleSheet, Text, useColorScheme, View } from 'react-native'
+import { PaperProvider } from 'react-native-paper'
+import { Colors } from 'react-native/Libraries/NewAppScreen'
 
 import Navigation from './app/Navigation'
 
@@ -66,7 +53,9 @@ function App(): JSX.Element {
 
   return (
     <>
-      <Navigation />
+      <PaperProvider>
+        <Navigation />
+      </PaperProvider>
     </>
   )
 }
