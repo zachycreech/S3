@@ -1,19 +1,28 @@
 {
-  "season": 1,
-  "characters": [
+  "data": [
     {
-      "id": 1,
-      "name": "Ayleth- Daughter of Moonlight",
-      "stats": {
-        "hp": 148,
-        "atk": 7,
-        "def": 8,
-        "sdg": 23,
-        "int": 25
-      },
-      "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
-      "special": "|Mastery || Dispel|",
-      "specialDescription": "Once per turn, when your oppenent casts a level 2 or lower spell, you can consume 5 'Will' cards to nullify the effect of the spell. The spell is immediately removed from the activity zone."
+      "season": 1,
+      "characters": [
+        {
+          "id": 1,
+          "name": "Ayleth- Daughter of Moonlight",
+          "stats": {
+            "hp": 148,
+            "atk": 7,
+            "def": 8,
+            "sdg": 23,
+            "int": 25
+          },
+          "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
+          "special": "|Mastery || Dispel|",
+          "specialDescription": "Once per turn, when your oppenent casts a level 2 or lower spell, you can consume 5 'Will' cards to nullify the effect of the spell. The spell is immediately removed from the activity zone."
+        },
+        {}
+      ]
+    },
+    {
+      "season": 2,
+      "characters": [{}]
     }
   ]
 }
