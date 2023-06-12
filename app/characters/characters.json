@@ -19,7 +19,7 @@
         },
         {
           "id": 2,
-          "name":"Ahlos- Blade of Old Vinlon",
+          "name": "Ahlos- Blade of Old Vinlon",
           "stats": {
             "hp": 195,
             "atk": 16,
@@ -27,9 +27,9 @@
             "sdg": 19,
             "int": 12
           },
-          "image":"https://www.serebii.net/pokemongo/pokemon/1/1.png",
+          "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
           "special": "|Mastery || Pyro Devour|",
-          "specialDescription":""
+          "specialDescription": ""
         },
         {
           "id": 3,
@@ -43,7 +43,7 @@
           },
           "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
           "special": "|Mastery || Swift Phoenix|",
-          "specialDescription":""
+          "specialDescription": ""
         },
         {
           "id": 4,
@@ -57,7 +57,7 @@
           },
           "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
           "special": "|Mastery || Surprise Tide|",
-          "specialDescription":""
+          "specialDescription": ""
         },
         {
           "id": 5,
@@ -71,21 +71,21 @@
           },
           "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
           "special": "|Mastery || Combo Burst|",
-          "specialDescription":""
+          "specialDescription": ""
         },
         {
           "id": 6,
           "name": "Esgaris- The Dreadknight",
           "stats": {
-          "hp": 210,
-          "atk": 19,
-          "def": 12,
-          "sdg": 9,
-          "int": 8
-        },
-        "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
-        "special": "|Mastery || Battle Rage|",
-        "specialDescription":""
+            "hp": 210,
+            "atk": 19,
+            "def": 12,
+            "sdg": 9,
+            "int": 8
+          },
+          "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
+          "special": "|Mastery || Battle Rage|",
+          "specialDescription": ""
         },
         {
           "id": 7,
@@ -99,7 +99,7 @@
           },
           "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
           "special": "|Mastery || Ritual Blessing|",
-          "specialDescription":""
+          "specialDescription": ""
         },
         {
           "id": 8,
@@ -113,7 +113,7 @@
           },
           "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
           "special": "|Mastery || Garden Regan|",
-          "specialDescription":""
+          "specialDescription": ""
         },
         {
           "id": 9,
@@ -127,7 +127,7 @@
           },
           "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
           "special": "|Mastery || Frosted Seeds|",
-          "specialDescription":""
+          "specialDescription": ""
         }
       ]
     },
@@ -135,118 +135,118 @@
       "season": 2,
       "characters": [
         {
-         "id":1 ,
-         "name": "Elricka- Virulent Koi",
-         "stats": {
+          "id": 1,
+          "name": "Elricka- Virulent Koi",
+          "stats": {
             "hp": 178,
             "atk": 17,
             "def": 12,
             "sdg": 22,
             "int": 17
-         },
-         "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
-         "special": "|Mastery || Blood of the Dart|",
-        "specialDescription":""
-      },
-      {
-        "id": 2,
-        "name": "Lamo'Rak- Last of the Vangaurd",
-        "stats": {
-          "hp": 218,
-          "atk": 21,
-          "def": 19,
-          "sdg": 13,
-          "int": 22
+          },
+          "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
+          "special": "|Mastery || Blood of the Dart|",
+          "specialDescription": ""
         },
-        "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
-        "special": "|Mastery || Battle Hardened|",
-        "specialDescription":""
-      },
-      {
-        "id": 3,
-        "name": "Madoc- Whisperer of the Lilac Flmae",
-        "stats": {
-          "hp": 226,
-          "atk": 6,
-          "def": 17,
-          "sdg": 21,
-          "int": 16
+        {
+          "id": 2,
+          "name": "Lamo'Rak- Last of the Vangaurd",
+          "stats": {
+            "hp": 218,
+            "atk": 21,
+            "def": 19,
+            "sdg": 13,
+            "int": 22
+          },
+          "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
+          "special": "|Mastery || Battle Hardened|",
+          "specialDescription": ""
         },
-        "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
-        "special": "|Mastery || Lilac Converter|",
-        "specialDescription":""
-      },
-      {
-        "id": 4,
-        "name": "Shawla- Armoress of the G.o.D.S",
-        "stats": {
-          "hp": 219,
-          "atk": 17,
-          "def": 22,
-          "sdg": 15,
-          "int": 19
+        {
+          "id": 3,
+          "name": "Madoc- Whisperer of the Lilac Flmae",
+          "stats": {
+            "hp": 226,
+            "atk": 6,
+            "def": 17,
+            "sdg": 21,
+            "int": 16
+          },
+          "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
+          "special": "|Mastery || Lilac Converter|",
+          "specialDescription": ""
         },
-        "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
-        "special": "|Mastery || Strength of the G.oD.S.|",
-        "specialDescription":""
-      },
-      {
-        "id": 5,
-        "name": "Starmory- Royal Rogue",
-        "stats": {
-          "hp": 225,
-          "atk": 20,
-          "def": 14,
-          "sdg": 11,
-          "int": 10
+        {
+          "id": 4,
+          "name": "Shawla- Armoress of the G.o.D.S",
+          "stats": {
+            "hp": 219,
+            "atk": 17,
+            "def": 22,
+            "sdg": 15,
+            "int": 19
+          },
+          "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
+          "special": "|Mastery || Strength of the G.oD.S.|",
+          "specialDescription": ""
         },
-        "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
-        "special": "|Mastery || Blizzard Berserk|",
-        "specialDescription":""
-      },
-      {
-        "id": 6,
-        "name": "Vynessa- Midnight Raveness",
-        "stats": {
-          "hp": 215,
-          "atk": 18,
-          "def": 24,
-          "sdg": 14,
-          "int": 16
+        {
+          "id": 5,
+          "name": "Starmory- Royal Rogue",
+          "stats": {
+            "hp": 225,
+            "atk": 20,
+            "def": 14,
+            "sdg": 11,
+            "int": 10
+          },
+          "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
+          "special": "|Mastery || Blizzard Berserk|",
+          "specialDescription": ""
         },
-        "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
-        "special": "|Mastery || Flight Rift Ambush|",
-        "specialDescription":""
-      },
-      {
-        "id": 7,
-        "name": "Syun- Fallen Saint",
-        "stats": {
-          "hp": 198,
-          "atk": 9,
-          "def": 18,
-          "sdg": 14,
-          "int": 12
+        {
+          "id": 6,
+          "name": "Vynessa- Midnight Raveness",
+          "stats": {
+            "hp": 215,
+            "atk": 18,
+            "def": 24,
+            "sdg": 14,
+            "int": 16
+          },
+          "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
+          "special": "|Mastery || Flight Rift Ambush|",
+          "specialDescription": ""
         },
-        "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
-        "special": "|Mastery || Thypoon Shield|",
-        "specialDescription":""
-      },
-      {
-        "id": 8,
-        "name": "Cyd- Sheppard of the Lost",
-        "stats": {
-          "hp": 165,
-          "atk": 9,
-          "def": 13,
-          "sdg": 19,
-          "int": 20
+        {
+          "id": 7,
+          "name": "Syun- Fallen Saint",
+          "stats": {
+            "hp": 198,
+            "atk": 9,
+            "def": 18,
+            "sdg": 14,
+            "int": 12
+          },
+          "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
+          "special": "|Mastery || Thypoon Shield|",
+          "specialDescription": ""
         },
-        "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
-        "special": "|Mastery || Devouring of the Light|",
-        "specialDescription":""
-      }
-    ]
+        {
+          "id": 8,
+          "name": "Cyd- Sheppard of the Lost",
+          "stats": {
+            "hp": 165,
+            "atk": 9,
+            "def": 13,
+            "sdg": 19,
+            "int": 20
+          },
+          "image": "https://www.serebii.net/pokemongo/pokemon/1/1.png",
+          "special": "|Mastery || Devouring of the Light|",
+          "specialDescription": ""
+        }
+      ]
     }
   ]
 }
