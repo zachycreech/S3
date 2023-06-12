@@ -1,3 +1,3 @@
-export { default as ImageGrid } from './ImageGrid'
-export { default as SelectedCharactersGrid } from './SelectedCharactersGrid'
+export { default as CharacterGrid } from './CharacterGrid'
+export { default as SelectedCharacters } from './SelectedCharacters'
 export { default as Button } from './Button'

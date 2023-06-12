@@ -2,7 +2,7 @@ import { useNavigation } from '@react-navigation/native'
 import React, { useState } from 'react'
 import { SafeAreaView, StyleSheet } from 'react-native'
 
-import { ImageGrid, SelectedCharactersGrid, Button } from '../components'
+import { CharacterGrid, SelectedCharacters, Button } from '../components'
 
 const styles = StyleSheet.create({
   container: {
@@ -26,7 +26,7 @@ function Home() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ImageGrid
+      <CharacterGrid
         setCharacter1={setCharacter1}
         setCharacter2={setCharacter2}
         setCharacter3={setCharacter3}
@@ -35,11 +35,7 @@ function Home() {
         character3={character3}
       />
       {/* <SeasonsSelector season={season} setSeason={setSeason} /> */}
-      <SelectedCharactersGrid
-        character1={character1}
-        character2={character2}
-        character3={character3}
-      />
+      <SelectedCharacters character1={character1} character2={character2} character3={character3} />
       <Button text="settings" color={'white'} style={styles.button} onPress={onPress} />
     </SafeAreaView>
   )
