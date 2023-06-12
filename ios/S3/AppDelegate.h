@@ -1,6 +1,19 @@
-#import <RCTAppDelegate.h>
-#import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-@interface AppDelegate : RCTAppDelegate
+#import <React/RCTBundleURLProvider.h>
+#import <React/RCTRootView.h>
+#import "RNSplashScreen.h"  // here
+
+@implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // ...other code
+
+    [RNSplashScreen show];  // here
+    // or
+    //[RNSplashScreen showSplash:@"LaunchScreen" inRootView:rootView];
+    return YES;
+}
 
 @end

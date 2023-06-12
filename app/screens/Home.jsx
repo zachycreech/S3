@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
   },
 })
 
+
 function Home() {
   const navigation = useNavigation()
   // const [season, setSeason] = React.useState(null)

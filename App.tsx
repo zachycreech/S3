@@ -4,21 +4,31 @@
  *
  * @format
  */
-import React from 'react'
+import React, { useEffect } from 'react'
 import type { PropsWithChildren } from 'react'
-import { StyleSheet, Text, useColorScheme, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, useColorScheme, View  } from 'react-native'
 import { PaperProvider } from 'react-native-paper'
 import { Colors } from 'react-native/Libraries/NewAppScreen'
 
 import Navigation from './app/Navigation'
+import SplashScreen from 'react-native-splash-screen'
 
 type SectionProps = PropsWithChildren<{
   title: string
 }>
 
 function Section({ children, title }: SectionProps): JSX.Element {
+
   const isDarkMode = useColorScheme() === 'dark'
+  // useEffect(() => {
+
+  //   SplashScreen.hide()
+  // }, [])
+
   return (
+    <TouchableOpacity onPress={
+      ()=> SplashScreen.hide()
+    }>
     <View style={styles.sectionContainer}>
       <Text
         style={[
@@ -41,6 +51,7 @@ function Section({ children, title }: SectionProps): JSX.Element {
         {children}
       </Text>
     </View>
+  </TouchableOpacity>
   )
 }
 
