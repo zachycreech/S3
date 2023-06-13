@@ -1,6 +1,6 @@
 default-ios-device = iPhone 14 Pro
 default-ios-tablet = iPad Pro (12.9-inch) (6th generation)
-default-android-device = scanifly-default
+default-android-device = s3-default
 
 run-doctor:
 	@npx @react-native-community/cli doctor
@@ -37,7 +37,6 @@ nuke-js-fragment:
 	@echo '☠️ ☠️  Removing temp react and metro directories, running watchman-del-all, removing node_modules, cleaning yarn and npm cache ☠️ ☠️'
 	@rm -rf $TMPDIR/react-* || true
 	@rm -rf $TMPDIR/metro-* || true
-	@watchman watch-del-all	
 	@rm -rf node_modules || true
 	@yarn cache clean
 	@yarn install
@@ -60,8 +59,10 @@ nuke-all: nuke-ruby-fragment nuke-js-fragment nuke-ios-fragment
 
 install:
 	@yarn install
+
+install-ios:
+	@yarn install
 	@cd ios && bundle exec pod install
-	@watchman watch-del './'; watchman watch-project './'
 
 install-run:
 	@make install
@@ -69,7 +70,7 @@ install-run:
 	
 install-run-device:
 	@make install
-	@make run-device
+	@make run-android-device
 
 lint:
 	@npm run lint:fix
@@ -98,14 +99,13 @@ stop:
 open-simulator:
 	@open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app
 
-run: 
+run-ios: 
 	
 	@make clean
 	@npx react-native run-ios --no-packager --simulator '$(default-ios-iPhone)' && make start open-simulator --jobs
 
-run-android:
-	
-	@make clean
+run:
+
 	@adb reverse tcp:8081 tcp:8081
 	@npx react-native run-android --no-packager
 	@make start
