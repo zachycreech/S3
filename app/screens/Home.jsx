@@ -2,6 +2,7 @@ import { useNavigation } from '@react-navigation/native'
 import React, { useState } from 'react'
 import { SafeAreaView, StyleSheet } from 'react-native'
 
+import characters from '../characters/characters.json'
 import { CharacterGrid, SelectedCharacters, Button } from '../components'
 
 const styles = StyleSheet.create({
@@ -20,6 +21,9 @@ function Home() {
   const [character2, setCharacter2] = useState()
   const [character3, setCharacter3] = useState()
 
+  const { data: charaterData } = characters
+  const [data, setData] = useState(charaterData[0].characters)
+
   function onPress() {
     navigation.navigate('Settings')
   }
@@ -27,6 +31,7 @@ function Home() {
   return (
     <SafeAreaView style={styles.container}>
       <CharacterGrid
+        data={data}
         setCharacter1={setCharacter1}
         setCharacter2={setCharacter2}
         setCharacter3={setCharacter3}

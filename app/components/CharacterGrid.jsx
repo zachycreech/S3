@@ -1,16 +1,26 @@
 import React from 'react'
-import { Image, StyleSheet, TouchableOpacity } from 'react-native'
-import { Grid, Col, Row } from 'react-native-easy-grid'
+import { Image, StyleSheet, TouchableOpacity, FlatList } from 'react-native'
 
 const styles = StyleSheet.create({
   grid: {
-    margin: 10,
+    justifyContent: 'center',
+    flexDirection: 'row',
+    flex: 1,
+    flexWrap: 'wrap',
   },
-  row: {
-    height: 120,
+  gridItem: {
+    margin: 5,
+    width: 100,
+    height: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+  gridItemImage: {
+    width: 100,
+    height: 100,
   },
   col: {
-    height: 200,
     width: '100%',
   },
   image: {
@@ -26,6 +36,7 @@ function CharacterGrid({
   setCharacter1,
   setCharacter2,
   setCharacter3,
+  data,
 }) {
   const onPress = () => {
     if (character1 === null) {
@@ -42,49 +53,24 @@ function CharacterGrid({
       setCharacter3(id)
     }
   }
-  const renderRows = () => {
+
+  const renderGridItem = (item) => {
     return (
-      <Row style={styles.row}>
-        <Col size={1} style={styles.col}>
-          <TouchableOpacity>
-            <Image
-              style={styles.image}
-              source={{
-                uri: 'https://placekitten.com/200/300',
-              }}
-            />
-          </TouchableOpacity>
-        </Col>
-        <Col size={1} style={styles.col}>
-          <TouchableOpacity>
-            <Image
-              style={styles.image}
-              source={{
-                uri: 'https://placekitten.com/200/300',
-              }}
-            />
-          </TouchableOpacity>
-        </Col>
-        <Col size={1} style={styles.col}>
-          <TouchableOpacity>
-            <Image
-              style={styles.image}
-              source={{
-                uri: 'https://placekitten.com/200/300',
-              }}
-            />
-          </TouchableOpacity>
-        </Col>
-      </Row>
+      <TouchableOpacity style={styles.gridItem} onPress={() => console.log(item.item.id)}>
+        <Image style={styles.gridItemImage} source={{ uri: item.item.image }} />
+      </TouchableOpacity>
     )
   }
 
   return (
-    <Grid style={styles.grid}>
-      {renderRows()}
-      {renderRows()}
-      {renderRows()}
-    </Grid>
+    <>
+      <FlatList
+        contentContainerStyle={styles.grid}
+        data={data}
+        numColumns={3}
+        renderItem={(item) => renderGridItem(item)}
+      />
+    </>
   )
 }
 

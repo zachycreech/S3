@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     marginLeft: 15,
     alignItems: 'center',
     justifyContent: 'center',
-    flex: 1,
+    flex: 0.3,
     display: 'flex',
     width: '100%',
   },
@@ -26,43 +26,40 @@ const styles = StyleSheet.create({
 
 function SelectedCharacters() {
   return (
-    <View style={styles.container}>
-      <View style={styles.container} />
-      <Grid style={styles.grid}>
-        <Row>
-          <Col>
-            <TouchableOpacity>
-              <Image
-                style={styles.image}
-                source={{
-                  uri: 'https://reactnative.dev/img/tiny_logo.png',
-                }}
-              />
-            </TouchableOpacity>
-          </Col>
-          <Col>
-            <TouchableOpacity>
-              <Image
-                style={styles.image}
-                source={{
-                  uri: 'https://reactnative.dev/img/tiny_logo.png',
-                }}
-              />
-            </TouchableOpacity>
-          </Col>
-          <Col>
-            <TouchableOpacity>
-              <Image
-                style={styles.image}
-                source={{
-                  uri: 'https://reactnative.dev/img/tiny_logo.png',
-                }}
-              />
-            </TouchableOpacity>
-          </Col>
-        </Row>
-      </Grid>
-    </View>
+    <Grid style={styles.grid}>
+      <Row>
+        <Col>
+          <TouchableOpacity>
+            <Image
+              style={styles.image}
+              source={{
+                uri: 'https://reactnative.dev/img/tiny_logo.png',
+              }}
+            />
+          </TouchableOpacity>
+        </Col>
+        <Col>
+          <TouchableOpacity>
+            <Image
+              style={styles.image}
+              source={{
+                uri: 'https://reactnative.dev/img/tiny_logo.png',
+              }}
+            />
+          </TouchableOpacity>
+        </Col>
+        <Col>
+          <TouchableOpacity>
+            <Image
+              style={styles.image}
+              source={{
+                uri: 'https://reactnative.dev/img/tiny_logo.png',
+              }}
+            />
+          </TouchableOpacity>
+        </Col>
+      </Row>
+    </Grid>
   )
 }
 
